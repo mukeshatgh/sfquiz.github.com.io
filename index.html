@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.jumbotron{
+			padding: 5px;
+			margin: 3px;
+		}
+	</style>		
+</head>
+<body oncontextmenu="return false;" onclick="return false;" onkeyup="demo(event)">
+	<div class="" style="margin-bottom: 0px;">
+			</div>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a class="navbar-brand"><a href="#"><img src="images4.jpg" hieght="30" width="30" style="border-radius: 50%;"class="img-fluid">&nbsp;&nbsp;</a><h4 class="text-white">Nav Krishna Valley Computer Center</h4></a>
+		
+		<ul class="navbar-nav alert-link text-info">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="test.php">Online Test</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Login</a>
+			</li>
+	</nav>
+	<div class="jumbotron" align="center">
+			<h1>Online Test</h1>
+			Username <SELECT>
+				<?php for($i=1; $i<10; $i++){echo "i".<option>user</option>"; $i++;}
+			</SELECT>
+	<button class="btn btn-primary">Start Test.</button>
+		</div>
+<script type="text/javascript">
+	function demo(event){
+		if(event.ctrlKey && event.keyCode==67)
+		{
+			window.alert("Not Allowed!");
+			window.location=location.href;
+		}
+	}
+</script>
+</body>
+</html>
